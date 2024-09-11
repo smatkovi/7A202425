@@ -7,20 +7,27 @@
  */
 public class Array
 {
-        public static void main(String[] args) {
+  public static void main(String[] args)  
+    {
+      int[] lottozahlen = new int[6];
 
+      for(int i=0; i<6; i++)
+        {
+          boolean unique = true;
+          
+          while(unique)
+            {
+              unique = true;
+              int rn = (int)((Math.random() * 45) + 1);
+              for(int lottozahl: lottozahlen)
+                if(lottozahl == rn) unique = false;
+              if(unique) lottozahlen[i] = rn;
+            }
+        }
 
-
-int[] lottozahlen = new int[6];
-
-lottozahlen[0] = 2;
-lottozahlen[1] = 7;
-lottozahlen[2] = 11;
-lottozahlen[3] = 30;
-lottozahlen[4] = 41;
-lottozahlen[5] = 42;
-
-for(int i: lottozahlen) System.out.println(i + " ");
-
-}
+      //for(int i=0; i<6; i++) System.out.println(lottozahlen[i]);
+      System.out.println(" ");
+      
+      for(int zahl: lottozahlen) System.out.println(zahl + " ");
+    }
 }
