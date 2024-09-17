@@ -15,7 +15,7 @@ public class Ternary
         Scanner scanner = new Scanner(System.in);
         System.out.println("Geben Sie einen Zahl ein und drücken Sie ENTER:");
         String input = scanner.nextLine();
-        zahl = Integer.valueOf(input);
+        zahl = Integer.parseInt(input);
         String ergebnis = (zahl % 2 == 0) ? "Die Zahl ist gerade" : "Die Zahl ist ungerade";
         System.out.println(ergebnis);
       }
