@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Ternary  
   {
-    public static void Main(String[] args)
+    public static void main(String[] args)
       {
         int zahl = 0;
         Scanner scanner = new Scanner(System.in);

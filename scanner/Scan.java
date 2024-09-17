@@ -11,7 +11,7 @@ import java.util.Scanner;
      
 public class Scan
   {
-    public static void Main(String[] args)
+    public static void main(String[] args)
       {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Geben Sie einen Text ein und drücken Sie ENTER:");
