@@ -20,3 +20,12 @@ public class Scan
         System.out.println("\n" + "Ihr Text: " + input);
       }
   }
+
+  
+  
+  
+  
+  
+  
+  
+  
