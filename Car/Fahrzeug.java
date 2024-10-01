@@ -1,11 +1,11 @@
 public class Fahrzeug {
-    private float tankvolumen;
-    private float tankinhalt;
-    private float kilometerstand;
-    private float verbrauch;
+    private double tankvolumen;
+    private double tankinhalt;
+    private double kilometerstand;
+    private double verbrauch;
 
     // Konstruktor
-    public Fahrzeug(float tankvolumen, float verbrauch) {
+    public Fahrzeug(double tankvolumen, double verbrauch) {
         this.tankvolumen = tankvolumen;
         this.tankinhalt = 0;
         this.kilometerstand = 0;
@@ -13,15 +13,15 @@ public class Fahrzeug {
     }
 
     // Getter und Setter
-    public float getTankvolumen() {
+    public double getTankvolumen() {
         return tankvolumen;
     }
 
     // ... andere Getter und Setter
 
-    public boolean fahren(float kilometer) {
+    public boolean fahren(double kilometer) {
         // Berechne den benötigten Kraftstoff und überprüfe, ob genug vorhanden ist
-        float benotigterKraftstoff = kilometer * verbrauch / 100;
+        double benotigterKraftstoff = kilometer * verbrauch / 100;
         if (benotigterKraftstoff <= tankinhalt) {
             tankinhalt -= benotigterKraftstoff;
             kilometerstand += kilometer;
@@ -32,7 +32,7 @@ public class Fahrzeug {
         }
     }
 
-    public boolean tanken(float liter) {
+    public boolean tanken(double liter) {
         // Überprüfe, ob der Tank überläuft
         if (tankinhalt + liter <= tankvolumen) {
             tankinhalt += liter;

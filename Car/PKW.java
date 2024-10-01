@@ -4,7 +4,7 @@ public class PKW extends Fahrzeug {
     private boolean fensterOffen;
 
     // Konstruktor
-    public PKW(float tankvolumen, float verbrauch, int zugelassenePersonen) {
+    public PKW(double tankvolumen, double verbrauch, int zugelassenePersonen) {
         super(tankvolumen, verbrauch);
         this.zugelassenePersonen = zugelassenePersonen;
         this.metallicLack = false;
