@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Fahrzeug
+comment1.params=tankvolumen\ verbrauch
+comment1.target=Fahrzeug(float,\ float)
+comment2.params=
+comment2.target=float\ getTankvolumen()
+comment3.params=kilometer
+comment3.target=boolean\ fahren(float)
+comment4.params=liter
+comment4.target=boolean\ tanken(float)
+numComments=5

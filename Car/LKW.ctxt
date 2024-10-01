@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=LKW
+comment1.params=tankvolumen\ verbrauch\ maxAnhaenger
+comment1.target=LKW(float,\ float,\ int)
+numComments=2
