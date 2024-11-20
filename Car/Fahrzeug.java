@@ -5,11 +5,11 @@ public class Fahrzeug {
     private double verbrauch;
 
     // Konstruktor
-    public Fahrzeug(double tankvolumen, double verbrauch) {
-        this.tankvolumen = tankvolumen;
-        this.tankinhalt = 0;
-        this.kilometerstand = 0;
-        this.verbrauch = verbrauch;
+    public Fahrzeug(double tankvolumenArg, double verbrauchArg) {
+        tankvolumen = tankvolumenArg;
+        tankinhalt = 0;
+        kilometerstand = 0;
+        verbrauch = verbrauchArg;
     }
 
     // Getter und Setter
@@ -23,8 +23,8 @@ public class Fahrzeug {
         // Berechne den benötigten Kraftstoff und überprüfe, ob genug vorhanden ist
         double benotigterKraftstoff = kilometer * verbrauch / 100;
         if (benotigterKraftstoff <= tankinhalt) {
-            tankinhalt -= benotigterKraftstoff;
-            kilometerstand += kilometer;
+            tankinhalt = tankinhalt - benotigterKraftstoff;//-= benotigterKraftstoff;
+            kilometerstand = kilometerstand + kilometer;//+= kilometer;
             return true;
         } else {
             System.out.println("Nicht genug Kraftstoff!");

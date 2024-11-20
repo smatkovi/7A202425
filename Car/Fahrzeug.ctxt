@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Fahrzeug
-comment1.params=tankvolumen\ verbrauch
+comment1.params=tankvolumenArg\ verbrauchArg
 comment1.target=Fahrzeug(double,\ double)
 comment2.params=
 comment2.target=double\ getTankvolumen()
